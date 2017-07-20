@@ -1,0 +1,79 @@
+/* HOME */
+#collection-594a8bbf9f745653e9c62526 {
+    #intro {
+        .inverse;
+        .Index-page-content {
+            padding-top: 0px;
+            padding-bottom: 50px;
+        }
+        .tight-hr;
+    }
+    #video {
+        display: none;
+        @media screen and (min-width: 1151px) {
+            display:block;
+        }
+    }
+    #mobile-video {
+        display: none;
+        @media screen and (max-width: 1150px) {
+            display:block;
+        }
+    }
+    #landing-shop {
+        background: @grey;
+        .product-page;
+    }
+    #why-flip-it {
+        .Index-page-content {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        background:@grey;
+        color:@purple;
+        h1,
+        h2,
+        h3 {
+            color: @purple;
+        }
+    }
+    #how-it-works-intro {
+        h1 {
+            color: @purple;
+        }
+    }
+    #flip-it-uses {
+        background: @grey;
+        .Index-gallery-item {
+            &:hover {
+                .Index-gallery-item-content {
+                    animation: tweakOut 0.3s linear forwards;
+                }
+            }
+        }
+        .Index-gallery-item-content {
+            border-radius: 4px !important;
+        }
+    }
+    #testimonials-1 {
+        .icons {
+            text-align: center;
+            i {
+                font-size: 2em;
+                width: 50px;
+                color: @purple;
+            }
+        }
+        .Index-page-content {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        blockquote,
+        figcaption,
+        h1 {
+            color: @purple;
+        }
+        background:@grey;
+    }
+}
+

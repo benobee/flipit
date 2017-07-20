@@ -1,0 +1,90 @@
+/* Global Classes */
+.sqs-edit-mode-active {
+    .code-block {
+        position: static !important;
+        transform: translate(0, 0) !important;
+    }
+}
+
+.sqs-edit-mode {
+    #video,
+    #mobile-video {
+        display: block !important;
+    }
+}
+
+.product-page {
+    .sqs-col-4 {
+        margin-bottom: 50px;
+        position: relative;
+        .code-block {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, 0px);
+            .shopify-buy-frame {
+                max-width: 100% !important;
+            }
+        }
+        @media screen and (min-width:641px) {
+            .code-block {
+                z-index: 9999;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, 0px);
+                .shopify-buy-frame {
+                    max-width: 100% !important;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.25s;
+                }
+            }
+            &:hover {
+                .content-fit {
+                    animation: bounce 0.3s 0.1s linear forwards;
+                }
+                .code-block {
+                    .shopify-buy-frame {
+                        opacity: 1;
+                        animation: tweakOut 0.3s linear forwards;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tight-hr {
+    .horizontalrule-block {
+        padding: 0;
+    }
+    .sqs-block-html {
+        padding: 0.5em !important;
+    }
+    hr {
+        padding: 0;
+        margin: @line-padding;
+    }
+}
+
+.inverse {
+    border-top: 1px solid hsla(67, 0%, 80%, 0.2);
+    background: @grey;
+    h1,
+    h2 {
+        color: #5C3777;
+    }
+    p,
+    li,
+    h3 {
+        color: #5C3777;
+    }
+}
+
+.sqs-block-button-element {
+    &:hover {
+        animation: tweakOut 0.3s linear forwards;
+    }
+}
